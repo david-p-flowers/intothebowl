@@ -1,0 +1,55 @@
+.navBarRow{
+    text-align: left;
+    width: 100%;
+    display: inline-flex;
+}
+
+.navbarlink{
+    display: inline-flex;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 25px;
+    color: black;
+}
+
+.pagebreak{        
+    border-top: 2px solid #bbb;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+.homePageFeed{
+    display: flex;
+    height: 40%;
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.newpostlink{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 40px;
+}
+
+.homepagepostheader{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#firstrowhomepage{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 200px;
+}
+
+.homepagepost{
+    margin-right: 40px;
+}
