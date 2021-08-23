@@ -1,21 +1,32 @@
+.titlearea{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
 .navBarRow{
     text-align: left;
     width: 100%;
     display: inline-flex;
+    margin-left: 60px;
 }
 
 .navbarlink{
     display: inline-flex;
     text-align: center;
-    margin-right: 20px;
-    font-size: 25px;
-    color: black;
+    margin-right: 40px;
+
+    font-family: pt-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 .pagebreak{        
     border-top: 2px solid #bbb;
-    margin-top: 15px;
+    margin-top: -5px;
     margin-bottom: -5px;
+    width: 100%;
 }
 
 .homePageFeed{
@@ -30,16 +41,30 @@
 
 .newpostlink{
     display: flex;
-    height: 250px;
-    width: 250px;
+    /* height: 250px;
+    width: 250px; */
     margin-top: 40px;
     
 }
 
 .homepagepostheader{
     display: flex;
-    margin-left: 30px;
     margin-top: 10px;
+
+    font-family: adelle-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.homepagepostdate{
+    display: flex;
+    margin-top: -15px;
+
+    font-family: adelle-sans, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
 }
 
 #firstrowhomepage{
@@ -55,4 +80,16 @@
 .homepageimage{
     height: 250px;
     width: 250px;
+}
+
+.titlename{
+    font-family: pt-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.logoimage{
+    width: 50px;
+    height: 50px;
 }
