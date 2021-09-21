@@ -1,0 +1,205 @@
+
+
+/* ----------------- Title Area ----------------- */
+
+.titlearea{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.titlename{
+    font-family: pt-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.navBarRow{
+    text-align: left;
+    width: 100%;
+    display: inline-flex;
+    margin-left: 60px;
+}
+
+.navbarlink{
+    display: inline-flex;
+    text-align: center;
+    margin-right: 30px;
+
+    font-family: pt-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logoimage{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:hover{
+    font-family: pt-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.pagebreak{        
+    border-top: 2px solid #bbb;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    width: 100%;
+}
+
+#ramenheaderlink{
+    display: inline-flex;
+    text-align: center;
+    margin-right: 30px;
+    
+    font-family: pt-sans-pro, sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 20px;
+
+    Color: #F4BB29; 
+}
+
+/* ----------------- Body ----------------- */
+
+.reviewspagefeed{
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+    padding: 0 15%;
+}
+
+.newpostlink{
+    display: inline-flex;
+    position: relative;
+
+    margin-top: 40px;
+    
+}
+
+.reviewpagepostheader{
+    display: flex;
+    margin-top: 75px;
+
+    font-family: adelle-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.reviewpagepostdate{
+    display: flex;
+    margin-top: -15px;
+
+    font-family: adelle-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#firstrowreviewpage{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 200px;
+}
+
+.reviewpagepost{
+    margin-right: 40px;
+}
+
+.reviewpageimage{
+    height: 350px;
+    width: 350px;
+}
+
+.reviewpagepostfilter{
+    display: inline-flex;
+    position: absolute;
+
+    margin-top: 10px;
+
+    font-family: adelle-sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: whitesmoke;
+    width: max-content;
+
+    background-color: black;
+    padding: 4px;
+}
+
+#reviewpagepostlocation{
+    background-color:#32B280;
+
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #32B280;
+}
+
+
+#reviewpagepostdiningstatus{
+    background-color:#2E66F4;
+
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #2E66F4;
+
+    margin-left: 100px;
+}
+
+#reviewpagepostrating{
+    height: 20px;
+
+    border-radius: 4px;
+    border-color: #F4BD2E;
+    border-width: 2.5px;
+    border-style: solid;
+
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    background-color: white;
+
+    margin-left: 180px;
+}
+
+.reviewpreview{
+
+    position: relative;
+
+    font-family: adelle-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-left: 5%;
+    margin-top: 25%;
+
+    color: #000;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    /* white-space: nowrap;  */
+    line-height: 16px; 
+
+    width: 60%;
+}
+
+.reviewpreview:after { content: ".."; background: white; position :absolute;} 
+
