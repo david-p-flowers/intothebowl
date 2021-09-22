@@ -1,8 +1,32 @@
+
+/* ----------------- Nav Bar ----------------- */
+
 .titlearea{
     width: 100%;
     display: inline-flex;
     align-items: center;
+
+    margin-bottom: 5px;
 }
+
+.title{
+    font-family: pt-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-right: 30px;
+
+    Color: #F4BB29; 
+}
+
+.logoimage{
+    width: 50px;
+    height: 50px;
+
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+
 
 .navBarRow{
     text-align: left;
@@ -14,12 +38,13 @@
 .navbarlink{
     display: inline-flex;
     text-align: center;
-    margin-right: 30px;
 
     font-family: pt-sans-pro, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 20px;
+
+    margin-right: 30px;
 }
 
 #feedheaderlink{
@@ -27,8 +52,6 @@
     font-style: bold;
     font-weight: 800;
     font-size: 20px;
-
-    Color: #F4BB29; 
 }
 
 #ramenheaderlink{
@@ -44,12 +67,27 @@
         color: black;
 }
 
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:hover{
+    font-family: pt-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;    
+}
+
 .pagebreak{        
     border-top: 2px solid #bbb;
     margin-top: -5px;
     margin-bottom: -5px;
     width: 100%;
 }
+
+/* --------------- Body/Feed ---------------- */
+
 
 .homePageFeed{
     display: flex;
@@ -75,18 +113,18 @@
 
     font-family: adelle-sans, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 23px;
 }
 
 .homepagepostdate{
     display: flex;
-    margin-top: -15px;
+    margin-top: -20px;
 
     font-family: adelle-sans, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #firstrowhomepage{
@@ -102,21 +140,15 @@
 .homepageimage{
     height: 250px;
     width: 250px;
+     border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 0;
 }
 
-.titlename{
-    font-family: pt-sans-pro, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    margin-left: 10px;
+.homepageimage:hover{
+    transform: scale(102%);
+    z-index: 0;
 }
-
-.logoimage{
-    width: 50px;
-    height: 50px;
-}
-
-
 
 .homepagepostlocation{
     display: flex;
@@ -132,16 +164,6 @@
 
     background-color: black;
     padding: 4px;
-}
 
-a{
-    color: currentColor;
-    text-decoration: none;
-}
-
-a:hover{
-    font-family: pt-sans-pro, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;    
+    z-index: 1;
 }

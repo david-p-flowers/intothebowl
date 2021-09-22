@@ -1,19 +1,36 @@
 
+/* ----------------- Nav Bar ----------------- */
 
-/* ----------------- Title Area ----------------- */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
 
-.titlearea{
+  .titlearea{
     width: 100%;
     display: inline-flex;
     align-items: center;
+
+    margin-bottom: 5px;
 }
 
-.titlename{
+.title{
     font-family: pt-sans-pro, sans-serif;
     font-style: normal;
     font-weight: 600;
-    margin-left: 10px;
+    margin-right: 30px;
+
+    Color: #F4BB29; 
 }
+
+.logoimage{
+    width: 50px;
+    height: 50px;
+
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
 
 .navBarRow{
     text-align: left;
@@ -25,17 +42,20 @@
 .navbarlink{
     display: inline-flex;
     text-align: center;
-    margin-right: 30px;
 
     font-family: pt-sans-pro, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 20px;
+
+    margin-right: 30px;
 }
 
-.logoimage{
-    width: 50px;
-    height: 50px;
+#feedheaderlink{
+    font-family: pt-sans-pro, sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 a{
@@ -47,9 +67,8 @@ a:hover{
     font-family: pt-sans-pro, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 20px;    
 }
-
 
 .pagebreak{        
     border-top: 2px solid #bbb;
@@ -58,148 +77,128 @@ a:hover{
     width: 100%;
 }
 
-#ramenheaderlink{
-    display: inline-flex;
+.bg {
+    /* The image used */
+    background-image: url("bluecounter.jpg");
+  
+    /* Full height */
+    height: 45%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Place text in the middle of the image */
+.hero-text {
     text-align: center;
-    margin-right: 30px;
-    
+    position: absolute;
+    top: 400px;
+    left: 75%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    color: white;
+  
     font-family: pt-sans-pro, sans-serif;
-    font-style: bold;
-    font-weight: 800;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
 
-    Color: #F4BB29; 
-}
+  }
 
-/* ----------------- Body ----------------- */
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    border-radius: 3px;
+    margin-bottom: 12px; /* Add some space below the input */
 
-.reviewspagefeed{
+    display: inline-block;
+  }
+
+/* --------------- Body/Feed ---------------- */
+
+
+.homePageFeed{
     display: flex;
-    flex-wrap: wrap;
-
-    position: relative;
-    padding: 0 15%;
+    height: 40%;
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .newpostlink{
-    display: inline-flex;
-    position: relative;
-
+    display: flex;
+    /* height: 250px;
+    width: 250px; */
     margin-top: 40px;
     
 }
 
-.reviewpagepostheader{
+.homepagepostheader{
     display: flex;
-    margin-top: 75px;
+    margin-top: 10px;
 
     font-family: adelle-sans, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
+    font-weight: 500;
+    font-size: 23px;
 }
 
-.reviewpagepostdate{
+.homepagepostdate{
     display: flex;
-    margin-top: -15px;
+    margin-top: -20px;
 
     font-family: adelle-sans, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 100;
+    font-size: 14px;
 }
 
-#firstrowreviewpage{
+#firstrowhomepage{
     display: flex;
     flex-wrap: wrap;
     padding: 0 200px;
 }
 
-.reviewpagepost{
+.homepagepost{
     margin-right: 40px;
 }
 
-.reviewpageimage{
-    height: 350px;
-    width: 350px;
+.homepageimage{
+    height: 250px;
+    width: 250px;
+     border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 0;
 }
 
-.reviewpagepostfilter{
-    display: inline-flex;
-    position: absolute;
+.homepageimage:hover{
+    transform: scale(102%);
+    z-index: 0;
+}
 
-    margin-top: 10px;
+.homepagepostlocation{
+    display: flex;
+    position: absolute;
+    margin-left: 5px;
 
     font-family: adelle-sans, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
-    color: whitesmoke;
+    font-size: 14px;
+    color: white;
     width: max-content;
 
     background-color: black;
     padding: 4px;
+
+    z-index: 1;
 }
-
-#reviewpagepostlocation{
-    background-color:#32B280;
-
-    border-radius: 4px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #32B280;
-}
-
-
-#reviewpagepostdiningstatus{
-    background-color:#2E66F4;
-
-    border-radius: 4px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #2E66F4;
-
-    margin-left: 100px;
-}
-
-#reviewpagepostrating{
-    height: 20px;
-
-    border-radius: 4px;
-    border-color: #F4BD2E;
-    border-width: 2.5px;
-    border-style: solid;
-
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-
-    background-color: white;
-
-    margin-left: 180px;
-}
-
-.reviewpreview{
-
-    position: relative;
-
-    font-family: adelle-sans, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-
-    margin-left: 5%;
-    margin-top: 25%;
-
-    color: #000;
-    text-overflow: ellipsis; 
-    overflow: hidden; 
-    /* white-space: nowrap;  */
-    line-height: 16px; 
-
-    width: 60%;
-}
-
-.reviewpreview:after { content: ".."; background: white; position :absolute;} 
-
