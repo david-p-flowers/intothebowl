@@ -7,6 +7,10 @@
     align-items: center;
 
     margin-bottom: 5px;
+
+    position: fixed;
+    background-color: white;
+    z-index: 2;
 }
 
 .title{

@@ -4,6 +4,10 @@
     align-items: center;
 
     margin-bottom: 5px;
+
+    position: fixed;
+    background-color: white;
+    z-index: 2;
 }
 
 .title{
@@ -67,4 +71,6 @@ a:hover{
     margin-top: -5px;
     margin-bottom: -5px;
     width: 100%;
+
+    z-index: 3;
 }
