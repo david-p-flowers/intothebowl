@@ -14,7 +14,7 @@ body, html {
     margin-bottom: 5px;
     position: fixed;
 
-    background-color: white;
+    background-color: black;
 
     z-index: 2;
 }
@@ -25,7 +25,7 @@ body, html {
     font-weight: 600;
     margin-right: 30px;
 
-    Color: #F4BB29; 
+    Color: #000000; 
 }
 
 .logoimage{
@@ -105,7 +105,7 @@ a:hover{
     left: 75%;
     right: 5%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
   
     font-family: pt-sans-pro, sans-serif;
     font-style: normal;
